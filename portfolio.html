@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phùng Đình Khang | Java Backend Developer Portfolio</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-bs-spy="scroll" data-bs-target="#main-nav">
+
+    <nav class="navbar navbar-expand-lg fixed-top shadow-sm" id="main-nav">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">KHANG<span>.PD</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-center">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                    <li class="nav-item ms-lg-3">
+                        <button id="theme-toggle" class="btn btn-sm btn-outline-secondary">
+                            <i class="fas fa-moon"></i>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="hero-section d-flex align-items-center">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-7" data-aos="fade-right">
+                    <h5 class="text-primary fw-bold mb-3">Welcome to my portfolio</h5>
+                    <h1 class="display-3 fw-bold mb-3">Phùng Đình Khang</h1>
+                    <p class="lead mb-4">
+                        Tôi là Khang, 21 tuổi, sinh viên IT đang theo đuổi con đường <strong>Backend Developer</strong>. 
+                        Đam mê viết code, sửa bug và biến ý tưởng thành những hệ thống hoạt động thật.
+                    </p>
+                    <div class="d-flex gap-3">
+                        <a href="#" class="btn btn-primary btn-lg rounded-pill px-4 shadow">
+                            <i class="fas fa-download me-2"></i>Download CV
+                        </a>
+                        <a href="#contact" class="btn btn-outline-primary btn-lg rounded-pill px-4">
+                            Contact Me
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-5 text-center d-none d-lg-block" data-aos="zoom-in">
+                    <div class="hero-img-wrapper">
+                        <img src="https://res.cloudinary.com/dun6cug7p/image/upload/v1772734127/z7590981791407_1fec0fd1f91ce5373c8eb377a85cf8a2_ogxzx5.jpg" alt="Phùng Đình Khang" class="img-fluid rounded-circle border border-5 border-white shadow">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="section-padding">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-6" data-aos="fade-up">
+                    <h2 class="section-title">About Me</h2>
+                    <p>Sinh viên năm 3 ngành Kỹ thuật Phần mềm tại Đại học FPT Cần Thơ, định hướng trở thành Backend Developer. Có kiến thức về Java, Spring Boot và cơ sở dữ liệu trong phát triển web backend.</p>
+                    
+                    <div class="education-card mt-4 p-4 rounded-3 shadow-sm bg-light">
+                        <h5 class="fw-bold"><i class="fas fa-university text-primary me-2"></i> Education</h5>
+                        <p class="mb-0 fw-semibold text-dark">FPT University Can Tho (2023 – 2027)</p>
+                        <p class="text-muted small">Major: Software Engineering / Information Technology</p>
+                    </div>
+                </div>
+                <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+                    <h2 class="section-title">Career Goal</h2>
+                    <div class="goal-item mb-4">
+                        <h6 class="fw-bold text-primary">Short-term:</h6>
+                        <p>Tìm cơ hội thực tập Java Backend để áp dụng kiến thức và nâng cao kỹ năng thực tế.</p>
+                    </div>
+                    <div class="goal-item">
+                        <h6 class="fw-bold text-primary">Long-term:</h6>
+                        <p>Trở thành Backend Developer chuyên nghiệp, tham gia phát triển các hệ thống phần mềm cho doanh nghiệp.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="section-padding bg-light">
+        <div class="container">
+            <h2 class="section-title text-center mb-5" data-aos="fade-up">Technical Skills</h2>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-3" data-aos="flip-left">
+                    <div class="skill-card text-center p-4 bg-white rounded shadow-sm">
+                        <i class="fab fa-java fa-3x text-primary mb-3"></i>
+                        <h6>Java / Spring Boot</h6>
+                        <div class="progress mt-2" style="height: 6px;">
+                            <div class="progress-bar" style="width: 80%"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3" data-aos="flip-left" data-aos-delay="100">
+                    <div class="skill-card text-center p-4 bg-white rounded shadow-sm">
+                        <i class="fab fa-js fa-3x text-warning mb-3"></i>
+                        <h6>JavaScript / Bootstrap</h6>
+                        <div class="progress mt-2" style="height: 6px;">
+                            <div class="progress-bar bg-warning" style="width: 70%"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3" data-aos="flip-left" data-aos-delay="200">
+                    <div class="skill-card text-center p-4 bg-white rounded shadow-sm">
+                        <i class="fas fa-database fa-3x text-danger mb-3"></i>
+                        <h6>SQL Server / MySQL</h6>
+                        <div class="progress mt-2" style="height: 6px;">
+                            <div class="progress-bar bg-danger" style="width: 75%"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3" data-aos="flip-left" data-aos-delay="300">
+                    <div class="skill-card text-center p-4 bg-white rounded shadow-sm">
+                        <i class="fab fa-git-alt fa-3x text-dark mb-3"></i>
+                        <h6>Git / Postman</h6>
+                        <div class="progress mt-2" style="height: 6px;">
+                            <div class="progress-bar bg-dark" style="width: 85%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="section-padding">
+        <div class="container">
+            <h2 class="section-title text-center mb-5" data-aos="fade-up">Featured Projects</h2>
+            <div class="row g-4">
+                <div class="col-md-6" data-aos="zoom-in-up">
+                    <div class="project-card shadow">
+                        <div class="project-img bg-primary-gradient p-5 text-center text-white">
+                            <i class="fas fa-shopping-cart fa-4x"></i>
+                        </div>
+                        <div class="project-body p-4 bg-white">
+                            <h5 class="fw-bold">TechZone – E-commerce</h5>
+                            <p class="text-muted small">Phát triển website thương mại điện tử với chức năng tìm kiếm, lọc, phân trang và feedback.</p>
+                            <p class="small"><strong>Tech:</strong> Java, Servlet, SQL Server, JDBC</p>
+                            <a href="https://github.com/khangpd15" target="_blank" class="btn btn-sm btn-outline-primary rounded-pill">View Github</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6" data-aos="zoom-in-up" data-aos-delay="200">
+                    <div class="project-card shadow">
+                        <div class="project-img bg-dark-gradient p-5 text-center text-white">
+                            <i class="fas fa-hotel fa-4x"></i>
+                        </div>
+                        <div class="project-body p-4 bg-white">
+                            <h5 class="fw-bold">BookNow – Homestay System</h5>
+                            <p class="text-muted small">Hệ thống đặt phòng homestay, quản lý khách hàng, booking, check-in/out.</p>
+                            <p class="small"><strong>Tech:</strong> Java, Spring Boot, Spring Security, Thymeleaf</p>
+                            <a href="https://github.com/khangpd15" target="_blank" class="btn btn-sm btn-outline-primary rounded-pill">View Github</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section-padding bg-light">
+        <div class="container">
+            <h2 class="section-title text-center mb-5" data-aos="fade-up">Get In Touch</h2>
+            <div class="row g-4">
+                <div class="col-lg-4" data-aos="fade-right">
+                    <div class="contact-info p-4 bg-white rounded shadow-sm h-100">
+                        <div class="info-item d-flex mb-4">
+                            <i class="fas fa-envelope text-primary fa-lg me-3 mt-1"></i>
+                            <div>
+                                <h6 class="mb-0 fw-bold">Email</h6>
+                                <p class="text-muted small">khangpd.ce191105@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="info-item d-flex mb-4">
+                            <i class="fab fa-github text-primary fa-lg me-3 mt-1"></i>
+                            <div>
+                                <h6 class="mb-0 fw-bold">Github</h6>
+                                <p class="text-muted small">github.com/khangpd15</p>
+                            </div>
+                        </div>
+                        <div class="info-item d-flex mb-4">
+                            <i class="fas fa-map-marker-alt text-primary fa-lg me-3 mt-1"></i>
+                            <div>
+                                <h6 class="mb-0 fw-bold">Location</h6>
+                                <p class="text-muted small">Ninh Kiều, Cần Thơ</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-8" data-aos="fade-left">
+                    <form id="contact-form" class="bg-white p-4 rounded shadow-sm">
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <label class="form-label small fw-bold">Your Name</label>
+                                <input type="text" class="form-control" placeholder="John Doe" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label small fw-bold">Your Email</label>
+                                <input type="email" class="form-control" placeholder="name@example.com" required>
+                            </div>
+                            <div class="col-12">
+                                <label class="form-label small fw-bold">Message</label>
+                                <textarea class="form-control" rows="4" placeholder="How can I help you?" required></textarea>
+                            </div>
+                            <div class="col-12">
+                                <button type="submit" class="btn btn-primary w-100 py-2 fw-bold">Send Message</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-5 bg-white border-top">
+        <div class="container text-center">
+            <p class="mb-3">© 2026 <strong>Đình Khang Phùng</strong>. All rights reserved.</p>
+            <div class="social-links d-flex justify-content-center gap-3">
+                <a href="https://github.com/khangpd15" class="text-dark"><i class="fab fa-github fa-lg"></i></a>
+                <a href="#" class="text-dark"><i class="fab fa-linkedin fa-lg"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <button id="scroll-top" class="btn btn-primary shadow">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
