@@ -1,16 +1,16 @@
 document.addEventListener('DOMContentLoaded', () => {
-    // Initialize AOS (Animate on Scroll)
+
     AOS.init({
         duration: 800,
         once: true
     });
 
-    // 1. Dark Mode Toggle
+
     const themeToggle = document.getElementById('theme-toggle');
     const body = document.body;
     const icon = themeToggle.querySelector('i');
 
-    // Check saved theme
+
     const savedTheme = localStorage.getItem('theme');
     if (savedTheme === 'dark') {
         body.setAttribute('data-theme', 'dark');
@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    // 2. Navbar Scroll Effect
+
     const navbar = document.querySelector('.navbar');
     window.addEventListener('scroll', () => {
         if (window.scrollY > 50) {
@@ -39,7 +39,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    // 3. Scroll to Top Button
+
     const scrollTopBtn = document.getElementById('scroll-top');
     window.addEventListener('scroll', () => {
         if (window.scrollY > 500) {
@@ -53,7 +53,7 @@ document.addEventListener('DOMContentLoaded', () => {
         window.scrollTo({ top: 0, behavior: 'smooth' });
     });
 
-    // 4. Smooth Scroll for Nav Links
+
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
             e.preventDefault();
@@ -64,7 +64,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     behavior: 'smooth'
                 });
                 
-                // Close mobile menu after click
+
                 const navbarCollapse = document.querySelector('.navbar-collapse');
                 if (navbarCollapse.classList.contains('show')) {
                     document.querySelector('.navbar-toggler').click();
@@ -73,7 +73,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // 5. Contact Form Simulation
     const contactForm = document.getElementById('contact-form');
     contactForm.addEventListener('submit', (e) => {
         e.preventDefault();
@@ -84,7 +83,7 @@ document.addEventListener('DOMContentLoaded', () => {
         btn.innerText = 'Sending...';
         
         setTimeout(() => {
-            alert('Cảm ơn Khang! Tin nhắn đã được gửi thành công (Demo).');
+            alert('Cảm ơn Khang! Tin nhắn đã được gửi thành công .');
             btn.disabled = false;
             btn.innerText = originalText;
             contactForm.reset();
